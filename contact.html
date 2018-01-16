@@ -1,82 +1,68 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-us">
 
 <head>
-	<link rel="stylesheet" type="text/css" href="assests/css/style.css">
-
-	<title>The page of Ni Guo</title>
+  <meta charset="UTF-8">
+  <title>Contact | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-
 <body>
-	<section>
-		<div id="top">
-			<header>
-				<strong>Ni Guo	
-			</header>
-		</div>
 
-		<ul id="topright">
-			<li>
-				<a href="index.html">About &nbsp;|</a>
-			</li>
-			<li>
-				<a href="portfolio.html">&nbsp;Portfolio&nbsp;|</a>
-			</li>
-			<li>
-				<a href="contact.html">&nbsp;Contact</a>
-			</li>
-		</ul>
-	</section>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Ni Guo</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-	
-		<div id="About">
-			<h2>
-				Contact
-			</h2>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-			<form>
-				Name
-				<input id="text" type="text" name="name" placeholder="Johm Smith" size=96>
-				Email
-				<input id="text" type="text" name="email"  placeholder="example@gmail.com" size=96>
-				Message
-				<input id="message" type="text" name="message" size=96>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+    </section>
 
-				<button>Submit</button>
-			</form> 
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
 
-		</div>
-	
-	<div id="Connect">
+        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+   </div>
 
-		<h3>Connect with Me</h3>
-		
-		<div>
-			<ul id="logos">
-				<li>
-					<a href="https://github.com/NydiaGuo/HW-Wireframe.git">
-					<img src="assests/images/github.png" alt="My GitHub Page"  width="60" height="60">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/ni-guo">
-					<img src="assests/images/linkedin.png" alt="My LinkLn Page" width="60" height="60">
-					</a>
-				</li>
-				<li>
-					<a href="https://stackoverflow.com/story/nydia">
-					<img src="assests/images/stackoverflow.png" alt="The stackoverflow link" width="60" height="60" >
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
 
-	<footer>
-		© Copyrihgt2016 Ni Guo
-	</footer>
 
+  <footer>
+    <div class="container">
+      Copyright &copy; 2016 Your Name
+    </div>
+  </footer>
 </body>
 
 </html>
